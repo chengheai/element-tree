@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  height: 0;
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.container .topbar-wrap {
+  height: 50px;
+  line-height: 50px;
+  background: #373d41;
+  padding: 0px;
+}
+
+.container .main {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.container .content-container {
+  background: #fff;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  /*padding: 10px;*/
+  padding-bottom: 1px;
+}
+
+.container .content-container .content-wrapper {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.el-header {
+  background-color: #409EFF;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+/***************************************************************************************/
+/*style for header.vue*/
+/***************************************************************************************/
+.el-row i{
+  color: #FFFFFF;
+  vertical-align: inherit;
+}
+.el-menu--horizontal>.el-menu-item.is-active {
+  border-bottom: 2px solid #409eff;
+  color: #303133;
+}
+/*.el-menu-item * {
+  vertical-align: super;
+}*/
+.fontSize{
+  font-size: 1.2rem;
+}
+
+/************header logo*************/
+.navbar-header {
+  min-width: 240px !important;
+}
+.pull-left {
+  float: left;
+}
+.pull-left {
+  float: left !important;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 24px;
+  text-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+}
+
+.navbar-default .navbar-brand {
+  color: #777777;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.navbar-brand {
+  float: left;
+  padding: 15px 12px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+small, .small {
+  font-size: 85%;
+}
+/*.navbar-logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../src/assets/log.png);
+  background-repeat: no-repeat;
+  margin-top: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+  color: #ebeef5;
+}*/
+.pull-left {
+  float: left !important;
+}
+.navbar-title {
+  display: inline-block;
+  height: 55px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+img {
+  vertical-align: middle;
+}
+/************************/
+/**************************************home.vue***************************/
+.el-tree{
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #FAFAFA;
+  font-size: 1.2rem;
+}
+.el-tree i{
+  color: #409EFF;
+  padding-right: 10px;
+}
+.el-tree-node__content>.el-tree-node__expand-icon {
+  display: none;
+}
+
+/*.custom-tree-node {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 8px;
+}*/
+.aside{
+  border-right: 1px solid #e6e9f0;
+  height: 850px;
+  background-color: #FAFAFA;
+}
+.asideButton{
+  padding: 20px;
+  margin-left: 25px;
+}
+.asideButton .el-row{
+  padding: 10px;
+}
+.asideButton .el-row i{
+  color: #bdc1ca;
+}
+.asideButton .el-input{
+  width: 220px;
+}
+.asideButton .el-input input{
+  border-radius: 35px;
+}
+label{
+  line-height: 40px;
+}
+.el-table{
+  margin-top: 25px
+}
+.el-table i{
+  color: #777777;
+  padding-right: 10px;
+  margin-right: 20px;
+}
+.block{
+  padding-top: 5%;
+}
+.block i{
+  color: #777777;
+}
+/*************************标签鼠标右击页面样式******************************/
+.el-menu-vertical{
+  border: 3px solid rgb(84, 92, 100);
+  border-radius: 10px;
+  z-index: 100;
+}
+.el-menu-vertical i{
+  color: #777777;
+}
+.menuItem{
+  height: 40px;
+  line-height: 40px;
+  background-color: #545c64;
+  font-size: 1.2rem;
+}
+.menuItem:hover{
+  background-color: #409EFF;
+}
