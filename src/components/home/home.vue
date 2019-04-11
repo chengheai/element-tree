@@ -5,7 +5,7 @@
         <div class="asideButton">
           <el-row>
             <el-col>
-              <el-button type="primary" style="width: 220px" size="medium" plain round @click="handleNew">发布标签库</el-button>
+              <el-button type="primary" style="width: 220px" size="medium" plain round @click="handleNew">发布新地址</el-button>
             </el-col>
           </el-row>
           <el-row>
@@ -108,15 +108,15 @@
               </el-col>
             </el-row>
             <el-table :data="tableData" :stripe="true" class="el-table" :header-cell-style="{background:'#FAFAFA'}">
-              <el-table-column prop="tagID" label="标签ID">
+              <el-table-column prop="tagID" label="编号">
               </el-table-column>
-              <el-table-column prop="name" label="标签名称">
+              <el-table-column prop="name" label="名称">
               </el-table-column>
-              <el-table-column prop="description" label="标签描述">
+              <el-table-column prop="description" label="描述">
               </el-table-column>
-              <el-table-column prop="creatorID" label="创建者ID">
+              <el-table-column prop="creatorID" label="创建人">
               </el-table-column>
-              <el-table-column prop="regeneratorID" label="更新者ID">
+              <el-table-column prop="regeneratorID" label="更新人">
               </el-table-column>
               <el-table-column label="操作" width="120px">
                 <template slot-scope="scope">
@@ -270,10 +270,10 @@ export default {
   data() {
     const item = {
       tagID: "ID001",
-      name: "社交网络",
-      description: "此处是改标签ID内容的详细描述...",
-      creatorID: "Admin-50mr20w7",
-      regeneratorID: "Admin-50mr20w7"
+      name: "地区",
+      description: "此处是改内容的详细描述...",
+      creatorID: "Admin",
+      regeneratorID: "Admin"
     };
     return {
       DATA: null,
